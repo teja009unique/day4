@@ -1,0 +1,90 @@
+---> Naming Convernsions of a Variable in Python:
+	* First letter should not be number or special characters.
+	* First letter can be underscore.
+	* Declare variables with suitable meaning.
+
+
+-----
+
+If we can change after declaring, then it is Mutable.
+Ex: If there is water in a container, we can remove the water and pour milk.
+
+If we cannot change the value after declaring, then it is immutable.
+Ex: We prepared a birthday cake in oven, then we cannot change.
+
+
+------
+
+Deadlock:
+
+Imagine 2 persons came to hotel and ordered friedrice at the same time. But only 1 plate friedrice is there.
+This is called Deadlock situation.
+Ex: If we want to play a video; and if some other team also wants to access the same video; then both will hang.
+So, Immutable data structures are designed to avoid deadlock situations.
+Ex: In a project, the source code is at some place; both are trying to access the source code (one file); then it will stop and not allocate to anyone.
+Example of real world:
+In Instagram, we upload photos and videos.These will be stored in the backend of Instagram (Database). But let us consider they will be stored in a list sequentially. Now, if we are accessing the same Instagram account through multiple phones; there will be issue to open. Thats why we need Immutable data structures.
+
+If we design a data struture where it cannot be changed, multiple developers donot try to access them. So, developers will try to create new variables. Then the memory allocation issues will not arise. That's why Immutable data structures are designed.
+
+---------------
+
+List:
+Lists are used to store multiple items in a single variable.
+
+Homogeneous Data Structure:
+All the elements inside must be of same data type.
+Ex: Array.
+
+Heterogenous Data Structure:
+Same data type elements are not necessary.
+Ex: Lists
+
+
+Lists are called Heterogenous data structures.
+
+
+-------------
+List Methods:-
+
+* nums = [1,''hello'',True]
+  print(nums.count(1))
+
+ o/p: 2   ; because 'True' is considered as 1 here
+
+
+
+* nums = [1,''hello'']
+  print(nums.index(1))
+
+  o/p: 0
+ Inorder to check the index of the value, we use .index() method
+
+
+* nums = [1,''hello'']
+  nums.append("apples")
+  print(nums)
+
+  o/p: [1,'hello','apples']
+
+
+* nums = [1,"hello","apples"]
+  nums.pop()
+  print(nums)
+
+  o/p: [1,'hello']
+
+
+* nums = [1,"hello","apples"]
+  nums.pop(1)
+
+  o/p: [1,'apples']
+  If we know the index, we can give inside pop() method.
+
+
+* nums = [1,"hello","apples"]
+  nums.remove("hello")
+
+  o/p: [1,'apples']
+  If we donot know the index, we will give value in remove method.
+
